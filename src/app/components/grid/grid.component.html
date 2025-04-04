@@ -1,0 +1,5 @@
+<section class="grid">
+    <div *ngFor="let row of grid" class="row">
+        <app-cell *ngFor="let cell of row" [style]="cell.getStyle()" [value]="cell.getValue()"></app-cell>
+    </div>
+</section>
